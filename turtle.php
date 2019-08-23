@@ -344,8 +344,12 @@ $align1 = [
     'arr' => [2,3,8,3, 15,5,6],
     'expected' => 5
 ];
-
-$steps = [ $shrink0, $shrink1, $shrink2, $expand0, $expand1, $expand2, $align0, $align1];
+$sample =  [
+    'type' => 'initial sample',
+    'arr' =>[1, 3, 2, 5,  4, 4, 6, 3,  2],
+    'expected' => 7
+];
+$steps = [ $shrink0, $shrink1, $shrink2, $expand0, $expand1, $expand2, $align0, $align1, $sample];
 foreach($steps as $step)
 {
 
